@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript note taking App</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Hello world.</h3>
+    <div class="note">
+        <h2>Note Book</h2>
+        <div class="note-input">
+            <h3>Add a new note</h3>
+            <div class="note-wrapper">
+                <input type="text" id="note-title" placeholder="Title of the notes">
+                <textarea id="note-content" rows="5" placeholder="Write Your Content"></textarea>
+                <button class="btn" id="add-note-btn" type="button"><span><i class="fas fa-plus"></i></span>Add Note</button>
+            </div>
+        </div>
+        <div class="note-list">
+            <div class="note-item">
+                <h3>Title Goes Here..</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, officia.</p>
+                <button type="button" class="btn delete-note-btn"><span><i class="fas fa-trash"></i> Remove</span></button>
+            </div>
+        </div>
+        <button type="button" class="btn" id="delete-all-btn"><span><i class="fas fa-trash"></i>Delete All</span></button>
+    </div>
 </body>
 </html>
